@@ -1,9 +1,8 @@
 import { useRouter } from "expo-router";
-import { Image, ScrollView, Text, TouchableOpacity, View } from "react-native";
+import { Image, ScrollView, StatusBar, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import logo from "../assets/images/dinetimelogo.png"
-import entryImg from "../assets/images/Frame.png"
-import { StatusBar } from "react-native";
+import logo from "../assets/images/dinetimelogo.png";
+import entryImg from "../assets/images/Frame.png";
 
 export default function Index() {
   const router = useRouter()
