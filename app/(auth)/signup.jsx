@@ -47,9 +47,20 @@ const Signup = () => {
                             )}
                         </Formik>
                         <View>
-                            <TouchableOpacity className="flex flex-row justify-center items-center gap-2 my-10 p-2" onPress={() => router.push('signin')}>
+                            <TouchableOpacity className="flex flex-row justify-center items-center gap-2 mt-5 p-2" onPress={() => router.push('signin')}>
                                 <Text className="text-white font-semibold">Already a User?</Text>
                                 <Text className="text-base font-semibold underline text-[#f49b33]">Sign in</Text>
+                            </TouchableOpacity>
+
+                            <Text className="text-center text-base font-semibold mb-4 text-white">
+                                <View className="border-b-2 border-[#f49b33] p-2 mb-1 w-24" />
+                                {" "}or{" "}
+                                <View className="border-b-2 border-[#f49b33] p-2 mb-1 w-24" />
+                            </Text>
+
+                            <TouchableOpacity className="flex flex-row justify-center items-center gap-2 mb-5 p-2" onPress={() => router.push('home')}>
+                                <Text className="text-white font-semibold">Be a</Text>
+                                <Text className="text-base font-semibold underline text-[#f49b33]">Guest User</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
